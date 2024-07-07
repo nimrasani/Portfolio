@@ -10,6 +10,23 @@
 # Font & Color Variables
 # Help: https://bootstrapmade.com/color-system/
 --------------------------------------------------------------*/
+/* background: #0f0c29;  fallback for old browsers */
+/* background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  Chrome 10-25, Safari 5.1-6 */
+/* background: linear-gradient(to right, #24243e, #302b63, #0f0c29); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+/* background: #093028;  fallback for old browsers */
+/* background: -webkit-linear-gradient(to right, #237A57, #093028);  Chrome 10-25, Safari 5.1-6 */
+/* background: linear-gradient(to right, #237A57, #093028); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+/* linear-gradient(90deg, #c561ffdd 0%, #5533ffd4 100%); */
+/* --primary: #c561ff;
+    --primary-light: #c561ff;
+    --highlight: #c561ff; */
+/* #090e2a */
+
+/* background-color: #310e68; */
+/* background-image: linear-gradient(316deg, #310e68 0%, #5f0f40 74%); */
+
 /* Fonts */
 :root {
   --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto,
@@ -892,9 +909,12 @@ section,
   justify-content: center;
   transition: ease-in-out 0.3s;
   position: relative;
+  margin-bottom: 1rem;
 }
 
-.services .service-item .icon i {
+.services .service-item .icon i,
+.services .service-item.item-cyan .icon .icon-logo svg ,
+.services .service-item.item-red .icon .icon-logo svg{
   font-size: 36px;
   transition: 0.5s;
   position: relative;
@@ -912,9 +932,9 @@ section,
 }
 
 .services .service-item h3 {
-  font-weight: 700;
+  font-weight: 500;
   margin: 10px 0 15px 0;
-  font-size: 22px;
+  font-size: 18px;
 }
 
 .services .service-item p {
@@ -927,12 +947,16 @@ section,
   box-shadow: 0px 5px 35px 0px rgba(0, 0, 0, 0.1);
 }
 
-.services .service-item.item-cyan i {
+.services .service-item.item-cyan i,
+.services .service-item.item-cyan .icon .icon-logo svg path {
   color: #0dcaf0;
+  fill: #0dcaf0;
 }
 
-.services .service-item.item-cyan:hover .icon i {
+.services .service-item.item-cyan:hover .icon i,
+.services .service-item.item-cyan:hover .icon .icon-logo svg path {
   color: #fff;
+  fill: #fff;
 }
 
 .services .service-item.item-cyan:hover .icon path {
@@ -963,12 +987,16 @@ section,
   fill: #20c997;
 }
 
-.services .service-item.item-red i {
+.services .service-item.item-red i,
+.services .service-item.item-red .icon .icon-logo svg path {
   color: #df1529;
+  fill: #df1529;
 }
 
-.services .service-item.item-red:hover .icon i {
+.services .service-item.item-red:hover .icon i,
+.services .service-item.item-red:hover .icon .icon-logo svg path {
   color: #fff;
+  fill: #fff;
 }
 
 .services .service-item.item-red:hover .icon path {
