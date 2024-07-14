@@ -179,7 +179,7 @@ h6 {
   min-width: 200px;
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 992px) {
   .header {
     background-color: var(--background-color);
     border-right: 1px solid
@@ -189,7 +189,7 @@ h6 {
   }
 }
 
-@media (min-width: 1200px) and (max-width: 1600px) {
+@media (min-width: 992px) and (max-width: 1600px) {
   .header ~ main {
     margin-left: 160px;
   }
@@ -206,7 +206,7 @@ h6 {
 
 .header .header-toggle {
   color: var(--contrast-color);
-  background-color: var(--accent-color);
+  background: var(--nav-hover-gradient-color);
   font-size: 22px;
   display: flex;
   align-items: center;
@@ -240,6 +240,12 @@ h6 {
   padding: 0 0 20px 0;
   margin: 0;
   width: 140px;
+}
+
+@media (max-width: 1200px) {
+  .navmenu ul {
+    width: 100%;
+  }
 }
 
 .navmenu a,
