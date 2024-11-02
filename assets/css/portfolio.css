@@ -566,6 +566,26 @@ section,
   z-index: 1;
 }
 
+.hero .icon-image {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+}
+.icon-image.off {
+  display: none;
+}
+.link {
+  margin-left: 4px;
+  margin-right: 15px !important;
+}
+.link:hover .on {
+  display: none;
+}
+.link:hover .off {
+  display: inline-block;
+}
+
 .hero:before {
   content: "";
   background: color-mix(in srgb, var(--background-color), transparent 30%);
@@ -919,8 +939,8 @@ section,
 }
 
 .services .service-item .icon i,
-.services .service-item.item-cyan .icon .icon-logo svg ,
-.services .service-item.item-red .icon .icon-logo svg{
+.services .service-item.item-cyan .icon .icon-logo svg,
+.services .service-item.item-red .icon .icon-logo svg {
   font-size: 36px;
   transition: 0.5s;
   position: relative;
